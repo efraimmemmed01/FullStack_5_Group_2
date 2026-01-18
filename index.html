@@ -1,11 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handy Daddy - Main</title>
+  </head>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="./assets/css/page.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <body>
+    <header>
+      <div class="nav-mob">
+        <ul class="mob-nav">
+          <li><a href="#why-us">Why us?</a></li>
+          <li>
+            <button href="" class="services-mob">
+              Services <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+          <li><a href="">Appliances</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div id="Logo">
+        <img src="./assets/image/HandyDaddy-logo.png" alt="Handy Daddy Logo" />
+      </div>
+
+      <nav>
+        <button id="number">(+000) 000 00 00</button>
+
+        <ul>
+          <li><a href="#why-us">Why us?</a></li>
+          <li>
+            <button href="" class="services">
+              Services <i class="fa-solid fa-caret-down"></i>
+            </button>
+          </li>
+          <li><a href="">Appliances</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+          <li>
+            <button class="button" style="color: #ffd700">JOIN US</button>
+          </li>
+        </ul>
+
+        <button id="nav-btn"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <img src="./assets/image/HomeCarousel/Vector.png" class="home-vector" />
+        <article id="hero-content">
+          <div class="text-content">
+            <h1 class="hero-title">
+              WE'LL <span style="color: #ffd700">FIX IT</span>
+            </h1>
+
+            <div class="text-content-child">
+              <p>
+                Liquam turpis ligula velit augue dictum quam libero. Mattis
+                elementum diam at turpis lectus maecenas.
+              </p>
+
+              <div id="hero-buttons">
+                <button
+                  style="border: none; height: 50px; width: 250px"
+                  class="button"
+                >
+                  CALL NOW
+                </button>
+                <button
+                  style="
+                    border: none;
+                    background-color: #ffd700;
+                    height: 50px;
+                    width: 250px;
+                  "
+                  class="button"
+                >
+                  ORDER NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="slides">
+              <img
+                src="./assets/image/HomeCarousel/Image1.png"
+                alt="Handy Daddy 1"
+                class="slide active"
+              />
+              <img
+                src="./assets/image/HomeCarousel/Image2.png"
+                alt="Handy Daddy 2"
+                class="slide"
+              />
+            </div>
+            <div class="dots"></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="why-us">
+        <div class="why-container">
+          <article class="why-image">
+            <img src="./assets/image/WhyUs/Image1.png" alt="Daddy Fixing" />
+          </article>
+          <article class="why-right">
+            <button class="button see-less">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+
+            <div class="title">
+              <h1>WHY US</h1>
+            </div>
+            <ul class="list">
+              <li><i class="fa-solid fa-check"></i> Same day service</li>
+              <li><i class="fa-solid fa-check"></i> No hourly charge - flat rate</li>
+              <li><i class="fa-solid fa-check"></i> No extra charge for evening and week-end services</li>
+              <li><i class="fa-solid fa-check"></i> 3 month warranty on spare parts and labor</li>
+              <li><i class="fa-solid fa-check"></i> No surprise or hidden fees</li>
+              <li><i class="fa-solid fa-check"></i> Genuine spare parts</li>
+              <li><i class="fa-solid fa-check"></i> Fully insured technicians</li>
+              <li><i class="fa-solid fa-check"></i> Technicians trained by industry leaders</li>
+              <li><i class="fa-solid fa-check"></i> Criminal/background check for technicians</li>
+              <li><i class="fa-solid fa-check"></i> We work with all major brands</li>
+              <li><i class="fa-solid fa-check"></i> Over 15 years of experience</li>
+              <li><i class="fa-solid fa-check"></i> Double vaccinated against COVID</li>
+            </ul>
+            <button class="button see-more">See More</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/framework.js"></script>
+  </body>
 </html>

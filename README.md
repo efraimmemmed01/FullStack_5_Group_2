@@ -1,0 +1,1 @@
+Figma Dizayn: https://www.figma.com/design/FLyZLeRJkwswWepxNmNz8m/Handy-daddy-new?node-id=0-1&p=f&t=Lqof1ZVw20Z59Px9-0

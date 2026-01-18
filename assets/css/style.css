@@ -1,0 +1,156 @@
+/* Content */
+#hero {
+  height: fit-content;
+}
+
+#hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-vector {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 470px;
+}
+
+.text-content {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}
+
+.text-content-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.text-content-child p {
+  font-size: 18px;
+  width: 70%;
+}
+
+.hero-title {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+}
+
+#hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Why us */
+.why-us {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 100px;
+}
+.why-container {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  height: 500px;
+  transition: 0.5s;
+}
+.why-image {
+  height: 500px;
+  width: 600px;
+}
+.why-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  border-bottom: var(--Handy-Daddy-Yellow) 4px solid;
+  width: fit-content;
+}
+
+.why-right {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.see-more {
+  background-color: #ffd700;
+  transition: 0.5s !important;
+}
+.see-less {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 30px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #ffd700;
+  opacity: 0;
+  display: none;
+  transition: 0.5s;
+}
+
+.list li {
+  padding: 14px 23px;
+  padding-left: 0px;
+  font-size: 24px;
+}
+
+.list li:nth-child(n + 6) {
+  display: none;
+}
+
+.list.expanded li {
+  display: list-item;
+}
+
+.list li:not(:last-of-type) {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+@media (max-width: 800px) {
+  .text-content-child {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .text-content-child p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  #hero-buttons {
+    flex-direction: column;
+  }
+
+  .home-vector {
+    display: none;
+  }
+}
