@@ -4,7 +4,7 @@ const seeMoreMob = document.querySelector(".see-more-mob");
 const seeLess = document.querySelector(".see-less");
 const callNow = document.querySelector(".call-now");
 const whyContainer = document.querySelector(".why-container");
-const whyImage = document.querySelector(".why-image");
+const whyImage = document.querySelector(".why-image img");
 
 function toggleList() {
   const isExpanded = ul.classList.toggle("expanded");
@@ -28,6 +28,7 @@ function toggleList() {
     callNow.style.display = "none";
     seeLess.disabled = true;
     setTimeout(() => {
+      whyImage.setAttribute("src", "./assets/image/WhyUs/Image1.png");
       seeMore.style.opacity = "100%";
       seeLess.style.display = "none";
     }, 500);
