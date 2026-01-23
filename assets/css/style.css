@@ -1,0 +1,584 @@
+/* ==============================
+   HERO SECTION
+   ============================== */
+#hero {
+  height: fit-content;
+}
+
+#hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-vector {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 470px;
+}
+
+.text-content {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}
+
+.text-content-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.text-content-child p {
+  font-size: 18px;
+  width: 70%;
+}
+
+.hero-title {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+}
+
+#hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* ==============================
+   WHY US SECTION
+   ============================== */
+.why-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 100px;
+  gap: 50px;
+}
+
+.why-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 300px;
+  transition: max-height 0.8s ease;
+}
+
+.why-container.expanded {
+  max-height: 1200px;
+}
+
+.why-image {
+  height: 500px;
+  width: 600px;
+  transition: 0.5s;
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-images {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.why-images img {
+  height: 250px !important;
+  width: 250px !important;
+}
+
+.why-image img {
+  height: 500px;
+  width: 100%;
+}
+
+.why-right {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  background-color: white;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.list li {
+  padding: 14px 23px;
+  padding-left: 0;
+  font-size: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.list li:nth-child(n + 6) {
+  display: none;
+}
+
+.list.expanded li {
+  display: list-item;
+}
+
+/* Buttons */
+.see-more,
+.call-now {
+  background-color: #ffd700;
+  transition: 0.5s !important;
+}
+
+.see-more {
+  position: relative;
+}
+
+.see-more i {
+  display: none;
+}
+
+.call-now {
+  padding: 0 40px;
+  font-size: 18px;
+  display: none;
+}
+
+.see-less {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 30px;
+  padding: 0;
+  background-color: #ffd700;
+  opacity: 0;
+  display: none;
+  transition: 0.5s;
+}
+
+/* Title styles */
+.title {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.title p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.title hr {
+  border: none;
+  width: 75%;
+  height: 3px;
+  background-color: #ffd700;
+}
+
+/* Why buttons container */
+.why-buttons {
+  height: 50px;
+}
+
+/* ==============================
+   LOTTERY SECTION
+   ============================== */
+.lotto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 25px;
+  gap: 30px;
+}
+
+.lot-container {
+  background-color: #ffd700;
+  height: 288px;
+  width: 75%;
+  border-radius: 30px;
+  padding: 60px;
+  position: relative;
+}
+
+.lot-background {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.lot-background .line {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.lot button {
+  border: solid black 1px;
+}
+
+.text h1 {
+  font-weight: 400;
+  font-size: 32px !important;
+}
+
+.text p {
+  font-size: 36px;
+  font-weight: 50;
+  font-family: "gilroy";
+}
+
+.bag {
+  min-height: 230px !important;
+  height: 400px !important;
+  min-width: 100px !important;
+  position: absolute;
+  right: -5%;
+  transform: translate(0%, -25%);
+}
+
+/* ==============================
+   APPLIANCES SECTION
+   ============================== */
+.appliances {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 120px;
+  text-align: center;
+  gap: 30px;
+  user-select: none;
+}
+
+.appliance-cards {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  gap: 41px;
+}
+
+.appliance {
+  border: 1px solid #8d8d8d73;
+  border-radius: 5px;
+  height: 180px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.appliance:hover {
+  box-shadow: 1px 15px 30px 1px rgba(0, 0, 0, 0.309);
+  background-color: #ffd700;
+  transform: translateY(-5%);
+}
+
+.card-name {
+  font-weight: 500;
+}
+
+/* ==============================
+   TESTIMONIALS SECTION
+   ============================== */
+.testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 120px;
+  background-color: #ededed;
+  gap: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #343434;
+  height: 270px;
+  width: 520px;
+  padding: 25px 30px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ratings {
+  display: flex;
+  margin-left: auto;
+  color: #ffd7004d;
+}
+.rated {
+  color: #ffd700;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+/* ==============================
+   WE’LL FIX IT SECTION
+   ============================== */
+.well-fix-it {
+  width: 100%;
+  height: 177px;
+  padding: 1rem 10rem;
+  background-color: #ffd700;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin: 4rem 0;
+  box-sizing: border-box;
+}
+
+.well-fix-it hr {
+  height: 100%;
+  background-color: black;
+  width: 5px;
+  border: none;
+}
+
+.left {
+  width: 50%;
+  font-weight: 400;
+}
+
+.left h2 {
+  font-size: 24px;
+}
+
+.left h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.call {
+  font-size: 24px;
+}
+
+.right button {
+  background-color: #171717;
+  color: #ffd700;
+  padding: 1.5rem 3rem;
+}
+
+/* ==============================
+   MEDIA QUERIES
+   ============================== */
+@media (max-width: 800px) {
+  /* HERO */
+  .text-content-child {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .text-content-child p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  #hero-buttons {
+    flex-direction: column;
+  }
+
+  .home-vector {
+    display: none;
+  }
+
+  /* WHY US */
+  .why-us {
+    padding: 26px 22px;
+    height: fit-content;
+  }
+
+  .why-container {
+    flex-direction: column;
+    align-items: center;
+    max-height: 800px;
+    gap: 25px;
+  }
+
+  .why-image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .see-more-mob {
+    display: flex;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .see-more span {
+    display: none;
+  }
+
+  .why-images {
+    display: none;
+  }
+
+  .see-more i {
+    display: flex;
+  }
+
+  .see-less {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .list li {
+    font-size: 16px;
+  }
+
+  /* LOTTERY */
+  .lot-container {
+    width: 100%;
+    height: 150px;
+  }
+
+  .lot-btn {
+    display: none;
+  }
+
+  .text h1 {
+    font-size: 18px !important;
+  }
+
+  .text p {
+    font-size: 20px !important;
+  }
+
+  .bag {
+    height: 230px !important;
+    right: -25% !important;
+  }
+
+  /* APPLIANCES */
+  .appliance {
+    width: 150px;
+    height: 121px;
+  }
+
+  .appliance-cards {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  /* TESTIMONIES */
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    width: 95vw;
+  }
+
+  .userServ {
+    font-size: 12px;
+  }
+
+  /* WE’LL FIX IT */
+  .well-fix-it {
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .well-fix-it hr {
+    width: 2px;
+    height: 50%;
+  }
+
+  .left {
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .left h2 {
+    font-size: 14px;
+  }
+
+  .left h1 {
+    font-size: 16px;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .right .button {
+    padding: 20px;
+  }
+
+  .call {
+    display: none;
+  }
+}
