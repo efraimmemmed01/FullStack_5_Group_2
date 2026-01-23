@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.top-header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.top-header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-white {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.btn-orange {
+    background-color: #ff9900;
+    color: white;
+}
+
+/* Orta Bölmə */
+.contact-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.technician-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tech-img {
+    max-width: 250px;
+    display: block;
+}
+
+/* Forma */
+.contact-form {
+    width: 45%;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+.bottom-footer {
+    background-color: #ffb400; /* Şəkildəki sarı tonu */
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-btn-footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
