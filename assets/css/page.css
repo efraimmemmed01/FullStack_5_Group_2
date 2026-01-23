@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -206,9 +207,6 @@ nav button:hover {
 .circle {
   border-radius: 50% !important;
 }
-.mob-circle {
-  border-radius: 50% !important;
-}
 
 .mobile {
   display: none;
@@ -266,7 +264,15 @@ nav button:hover {
 }
 
 .newsletter {
+  display: flex;
+  flex-direction: column;
   width: 100% !important;
+  gap: 15px;
+}
+
+.newsletter p {
+  color: #ffd400;
+  display: none;
 }
 
 .newsletter h3 {
@@ -501,6 +507,10 @@ nav button:hover {
     align-items: center;
   }
 
+  .newsletter p {
+    display: flex;
+  }
+
   .newsletter h3 {
     margin-bottom: 0.5rem;
   }
@@ -601,6 +611,10 @@ nav button:hover {
 
   .intouch {
     display: none;
+  }
+  
+  .mob-circle {
+    border-radius: 50% !important;
   }
 }
 
