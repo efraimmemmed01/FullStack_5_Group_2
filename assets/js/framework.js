@@ -5,11 +5,6 @@ let navigation = document.querySelector(".mob-nav");
 let logo = document.querySelector("#Logo");
 let isOpen = false;
 
-const servBtnP = document.querySelector(".services");
-const servBtnM = document.querySelector(".services-mob");
-const servMenuDesktop = document.querySelector("nav .services + .menu");
-const servMenuMobile = document.querySelector(".mob-srv .menu");
-
 navBtn.addEventListener("click", () => {
   if (isOpen) {
     navBtn.disabled = true;
@@ -75,43 +70,3 @@ setInterval(() => {
   let nextIndex = (index + 1) % slides.length;
   showSlide(nextIndex);
 }, 4000);
-
-// Services menu.. ugh
-let isExpandedDesktop = false;
-let isExpandedMobile = false;
-
-if (servBtnP) {
-  servBtnP.addEventListener("click", () => {
-    if (!isExpandedDesktop) {
-      isExpandedDesktop = true;
-      servMenuDesktop.style.display = "flex";
-      setTimeout(() => {
-        servMenuDesktop.style.opacity = "1";
-      }, 30);
-    } else {
-      isExpandedDesktop = false;
-      servMenuDesktop.style.opacity = "0";
-      setTimeout(() => {
-        servMenuDesktop.style.display = "none";
-      }, 300);
-    }
-  });
-}
-
-if (servBtnM) {
-  servBtnM.addEventListener("click", () => {
-    if (!isExpandedMobile) {
-      isExpandedMobile = true;
-      servMenuMobile.style.display = "flex";
-      setTimeout(() => {
-        servMenuMobile.style.opacity = "1";
-      }, 30);
-    } else {
-      isExpandedMobile = false;
-      servMenuMobile.style.opacity = "0";
-      setTimeout(() => {
-        servMenuMobile.style.display = "none";
-      }, 300);
-    }
-  });
-}
